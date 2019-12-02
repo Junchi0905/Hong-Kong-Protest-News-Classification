@@ -20,7 +20,7 @@ parameters, primarily within a bag of words methodology, can best identify these
 word frequency, TF-IDF, sentiment analysis, topic modeling and varying n-grams. We also conclude with which combination of text pre-processing 
 led to better classification scores.
 
-#Evaluation and Modeling
+# Evaluation and Modeling
 Our goal is to build a binary classifier for balanced data(around 550 articles from Mainland China newspaper 
 and 550 from U.S. newspaper). Therefore, we believe a simple accuracy metric should be a valid method of evaluating success. 
 We additionally observe whether we are over predicting or under predicting a given country of origin and use an F1 score 
