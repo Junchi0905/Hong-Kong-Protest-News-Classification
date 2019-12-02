@@ -15,7 +15,7 @@ placed blame regarding the 2008 economic recession. We instead chose to set-up a
 We know that U.S. and Chinese newspapers largely take a different view on the Hong Kong Protests with U.S. newspapers largely framing 
 it in terms of protests for democracy and Chinese newspapers focusing on the violence of the protesters. Our goal is to determine which
 parameters, primarily within a bag of words methodology, can best identify these differences. We seek to identify word context using 
-word frequency, TF-IDF, sentiment analysis, topic modeling and varying n-grams. We also conclude with which combination of text pre-processing 
+word frequency, TF-IDF, sentiment analysis, topic identification and varying n-grams. We also conclude with which combination of text pre-processing 
 led to better classification scores.
 
 # Evaluation and Modeling
