@@ -1,4 +1,4 @@
-# Hong-Kong-Protest-News-Mining
+# Hong-Kong-Protest-News-Classification
 Detect differnent journalistic tones based on Hong Kong protest news from Mainland China and U.S. newspaper by Machine Learning models and NLP technologies 
 
 Team Members:
