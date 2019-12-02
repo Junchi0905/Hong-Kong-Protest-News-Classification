@@ -7,11 +7,9 @@ Michael Siebel, Junchi Tian, Bixuan Huang
 
 # Goal
 The goal of this project is to test a variety of NLP techniques in order to see which combination of techniques can best classify 
-each newspaper’s country of origin. This classification is attempted on one topic to evaluate how text pre-processing can detect 
-different, possibly nationalistic, tones (i.e., journalistic attitudes). The inspiration for this project was in part Müller, Porcaro 
+each newspaper’s country of origin. This classification is attempted on one topic to evaluate how text pre-processing can detect different, possibly nationalistic, tones (i.e., journalistic attitudes). The inspiration for this project was in part Müller, Porcaro 
 and von Nordheim (2018), who used topic modeling across four European countries’ newspapers in order to identify where each country 
-placed blame regarding the 2008 economic recession. We instead chose to set-up a classification design in which the journalist writings
-on the 2019 Hong Kong protests were classified by their country of origin—Mainland China or the U.S. 
+placed blame regarding the 2008 economic recession. We instead chose to set-up a classification design in which the journalist writings on the 2019 Hong Kong protests were classified by their country of origin—Mainland China or the U.S. 
 
 # Background
 We know that U.S. and Chinese newspapers largely take a different view on the Hong Kong Protests with U.S. newspapers largely framing 
