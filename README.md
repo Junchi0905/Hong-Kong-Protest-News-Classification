@@ -1,7 +1,9 @@
 # Hong-Kong-Protest-News-Classification
-Detect differnent journalistic tones based on Hong Kong protest news from Mainland China and U.S. newspaper by Machine Learning models and NLP technologies 
+Detect differnent journalistic tones based on Hong Kong protest news from Mainland China and U.S. newspaper by Machine Learning models and NLP technologies. 
+
 Mainland China Newspaper(English Version): China Daily, People's Daily, Xinhua Agent
-U.S. Newspaper: Wall Street Journal, New York Times, Washington Posts
+
+U.S. Newspaper: Wall Street Journal, New York Times, Washington Post
 
 Team Members:
 
