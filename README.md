@@ -41,13 +41,13 @@ After testing all term weights, we will take the “best” parameter and use it
 
 # References
 
-Müller, H., Porcaro, G., & von Nordheim, G. (2018). Tales from a crisis: diverging narratives of the euro area. Polity Contribution, Bruegel.
+* Müller, H., Porcaro, G., & von Nordheim, G. (2018). Tales from a crisis: diverging narratives of the euro area. Polity Contribution, Bruegel.
 
-Brownlee, J. (2017). A gentle introduction to the bag-of-words model. Retrieved from https://machinelearningmastery.com/gentle-introduction-bag-words-model/
+* Brownlee, J. (2017). A gentle introduction to the bag-of-words model. Retrieved from https://machinelearningmastery.com/gentle-introduction-bag-words-model/
 
-Çano, E., and Maurizio, M. (2019.) Word embeddings for sentiment analysis: A comprehensive empirical survey. ArXiv abs/1902.00753.
+* Çano, E., and Maurizio, M. (2019.) Word embeddings for sentiment analysis: A comprehensive empirical survey. ArXiv abs/1902.00753.
 
-Satapathy, R., Guerreiro, C., Chaturvedi, I., and Cambria, E. (2017). Phonetic-based microtext normalization for twitter sentiment analysis. In 2017 IEEE International Conference on Data Mining Workshops (ICDMW). IEEE: 407-413.
+* Satapathy, R., Guerreiro, C., Chaturvedi, I., and Cambria, E. (2017). Phonetic-based microtext normalization for twitter sentiment analysis. In 2017 IEEE International Conference on Data Mining Workshops (ICDMW). IEEE: 407-413.
 
-Silge, J., and Robinson, D. (2018). Analyzing word and document frequency: TF-IDF. In Text Mining with R: A Tidy Approach. Retrieved from https://www.tidytextmining.com/tfidf.html
+* Silge, J., and Robinson, D. (2018). Analyzing word and document frequency: TF-IDF. In Text Mining with R: A Tidy Approach. Retrieved from https://www.tidytextmining.com/tfidf.html
 
