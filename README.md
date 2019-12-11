@@ -39,6 +39,8 @@ TF-IDF weight (model 2) with the resulting accuracy scores indicating which was 
 After testing all term weights, we will take the “best” parameter and use it in models that vary n-gram combinations of words 
 (e.g., uni-gram, bi-gram, and tri-gram combinations). This is, therefore, a sequential process of accepting the best parameters.  
 
+![image](https://github.com/Junchi0905/Hong-Kong-Protest-News-Classification/blob/master/Images/modeling%20matrix.png)
+
 # References
 
 * Müller, H., Porcaro, G., & von Nordheim, G. (2018). Tales from a crisis: diverging narratives of the euro area. Polity Contribution, Bruegel.
