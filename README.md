@@ -40,6 +40,7 @@ After testing all term weights, we will take the “best” parameter and use it
 (e.g., uni-gram, bi-gram, and tri-gram combinations). This is, therefore, a sequential process of accepting the best parameters.  
 
 ![image](https://github.com/Junchi0905/Hong-Kong-Protest-News-Classification/blob/master/Images/modeling%20matrix.png)
+![image](https://github.com/Junchi0905/Hong-Kong-Protest-News-Classification/blob/master/Images/result.png)
 
 # References
 
