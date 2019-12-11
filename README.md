@@ -1,6 +1,7 @@
 # Hong-Kong-Protest-News-Classification
-Detect differnent journalistic tones based on Hong Kong protest news from Mainland China and U.S. newspaper by Machine Learning models and NLP technologies. 
 
+Detect differnent journalistic tones based on Hong Kong protest news from Mainland China and U.S. newspaper by Machine Learning models and NLP technologies. 
+![image](https://github.com/Junchi0905/Hong-Kong-Protest-News-Classification/blob/master/Images/news_image.png)
 Mainland China Newspaper(English Version): China Daily, People's Daily, Xinhua Agent
 
 U.S. Newspaper: Wall Street Journal, New York Times, Washington Post
@@ -10,7 +11,7 @@ Team Members:
 Michael Siebel, Junchi Tian, Bixuan Huang
 
 # Goal
-![image](https://github.com/Junchi0905/Hong-Kong-Protest-News-Classification/blob/master/Images/news_image.png)
+
 The goal of this project is to test a variety of NLP techniques in order to see which combination of techniques can best classify 
 each newspaper’s country of origin. This classification is attempted on one topic to evaluate how text pre-processing can detect different, possibly nationalistic, tones (i.e., journalistic attitudes). The inspiration for this project was in part Müller, Porcaro 
 and von Nordheim (2018), who used topic modeling across four European countries’ newspapers in order to identify where each country 
