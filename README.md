@@ -21,26 +21,30 @@ and von Nordheim (2018), who used topic modeling across four European countries�
 placed blame regarding the 2008 economic recession. We instead chose to set-up a classification design in which the journalist writings on the 2019 Hong Kong protests were classified by their country of origin—Mainland China or the U.S. 
 
 # Background
-We know that U.S. and Chinese newspapers largely take a different view on the Hong Kong Protests with U.S. newspapers largely framing 
-it in terms of protests for democracy and Chinese newspapers focusing on the violence of the protesters. Our goal is to determine which
-parameters, primarily within a bag of words methodology, can best identify these differences. We seek to identify word context using 
-word frequency, TF-IDF, sentiment analysis, topic identification and varying n-grams. We also conclude with which combination of text pre-processing 
-led to better classification scores.
 
-# Evaluation and Modeling
-Our goal is to build a binary classifier for balanced data(around 550 articles from Mainland China newspaper 
-and 550 from U.S. newspaper). Therefore, we believe a simple accuracy metric should be a valid method of evaluating success. 
-We additionally observe whether we are over predicting or under predicting a given country of origin and use an F1 score 
-as an alternative measure of success as it provides a harmonic average of precision and recall.
+This summer, protests broke out in Hong Kong, at first related to an extradition treaty that the protesters viewed as an encroachment of mainland China into the special administrative region of Hong Kong.  U.S. and Chinese newspapers largely take a different view on these protests.  U.S. newspapers are more likely to frame them in terms of protests for democracy, while Chinese newspapers are more likely to focus on the violence of the protesters. Our goal is to determine which parameters, primarily within a bag of words methodology, can best identify these differences. We seek to identify word context using word frequency, TF-IDF, sentiment analysis, topic identification and varying n-grams. We also conclude with which combination of text pre-processing led to better classification scores.
 
-We use Naive Bayes and XGBoost to build models and test each parameter one-by-one, from simple (e.g., term weights) to complex (e.g., word embeddings). 
-Therefore, each model contain one parameter change such as changing from a term frequency weight (model 1) to a 
-TF-IDF weight (model 2) with the resulting accuracy scores indicating which was better at determining word importance.
-After testing all term weights, we will take the “best” parameter and use it in models that vary n-gram combinations of words 
-(e.g., uni-gram, bi-gram, and tri-gram combinations). This is, therefore, a sequential process of accepting the best parameters.  
+# Modeling
+
+Using this BOW framework, we ran a total of 27 models, in which we varied three parameters: the minimum sparsity threshold, the term weights, and the n-grams.  We attempted three variations of each of the parameters.  Each model was run using a gradient-boosted decision tree with a logistic classifier and a log-likelihood cost function.  Table below displays each model configuration.  
 
 ![image](https://github.com/Junchi0905/Hong-Kong-Protest-News-Classification/blob/master/Images/Modeling_Image.png)
+
+These models were preprocessed using conventional methods such as term case transformation, stemming, stopword removal, and setting a maximum sparsity threshold of 90%—meaning that words that appeared in 90% or more of documents were removed under the same logic as stopword removal.  
+
+# Evaluation
+
+We evaluated our models based on their F1-scores.  Using this evaluation metric, we found that classification proved easy for our bag of words technique.  A 1% minimum sparsity threshold proved better than a 5% or 10%, but only by a little.  Moreover, term weights and n-grams made little difference.  Figure 2 shows the nine models run with a 1% minimum sparsity threshold—all containing similar F1-scores ranging from 0.955 to 0.979.  
+
 ![image](https://github.com/Junchi0905/Hong-Kong-Protest-News-Classification/blob/master/Images/compare.png)
+
+Our best model configuration included a bigram with binary term weights (i.e., one-hot-encoding) and a 1% minimum sparsity threshold. It contained an F1-score of 0.979.  On our test set, comprise of 331 news articles (30% of our corpus), we had only 7 misclassifications—3 false positives and 4 false negatives.  
+
+# Motivation
+
+Chinese newspapers focused attention to the violence of the protesters and the Hong Kong government’s response.  In doing so, they tended to talk about narrow, day-to-day events and did not link the protest story to wider global politics.  By contrast, U.S. newspapers paid more attention to wider issues and democracy.  Because they linked the protest story to wider US-China relations and global politics, their news contained more variance in content. 
+
+Overall, the similarity between Chinese newspapers is high, which likely improved our ability to distinguish it from U.S. newspapers.  As a result, the model configurations did not vary in their effectiveness.  We find that this corpus cannot meaningfully distinguish between BOW parameters.  This is most likely due to the amount substantively important terms that are unique between the articles’ country of origin.  
 
 # References
 
